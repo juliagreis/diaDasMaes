@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Dia das Mães</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/flowertrail.png');
+      background-color: #fff0f5;
+      background-size: cover;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    h1 {
+      color: #c71585;
+      font-size: 3em;
+      cursor: pointer;
+      transition: transform 0.2s;
+      margin-bottom: 10px;
+    }
+
+    h1:hover {
+      transform: scale(1.05);
+    }
+
+    .flores {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 300px;
+      height: auto;
+      display: none;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="flores">🌸🌷🌼🌺💐🌹</div>
+  <h1 onclick="mostrarFoto()">Feliz Dia das Mães!</h1>
+  <img id="fotoMae" src="foto_mae.jpeg" alt="Foto da Mamãe">
+
+  <script>
+    function mostrarFoto() {
+      document.getElementById('fotoMae').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
